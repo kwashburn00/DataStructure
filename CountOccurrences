@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        int[] array = { 3, 4, 4, 2, 3, 3, 4, 3, 2 };
+        Dictionary<int, int> countMap = new Dictionary<int, int>();
+
+        foreach (int number in array)
+        {
+            if (countMap.ContainsKey(number))
+                countMap[number]++;
+            else
+                countMap[number] = 1;
+        }
+
+        foreach (var pair in countMap)
+        {
+            Console.WriteLine($"{pair.Key}: {pair.Value} times");
+        }
+    }
+}
