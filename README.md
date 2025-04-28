@@ -1,5 +1,4 @@
 # DataStructure
-  Part 1: Research
     - Linked list allows efficiency with inserts and deleting without moving around elements like an array or a list. 
       A linked list is used when you need to insert or remove items from the middle of a collection frequently. 
     - Stack vs Queue: uses a Last-In-First-Out(LIFO) order, which allows the last item(s) to be added will be the first to be removed.
